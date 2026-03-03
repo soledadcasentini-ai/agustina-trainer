@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agustina Casentini — Entrenadora Personal</title>
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#E8836E">
+  <meta name="description" content="Entrenadora personal en Mar del Plata. Full Body, Face-head, Stretching y planes online personalizados.">
+  <meta name="keywords" content="entrenadora personal, Mar del Plata, fitness, full body, stretching">
+  <meta property="og:title" content="Agustina Casentini — Entrenadora Personal">
+  <meta property="og:description" content="Transformá tu cuerpo con planes personalizados">
+  <meta property="og:image" content="./foto_agustina_hero.webp">
+  <meta property="og:url" content="https://agustinacasentini.com">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"></noscript>
+  <link rel="stylesheet" href="styles.min.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════ NAV ═══ -->
+  <nav class="nav-sticky">
+    <div class="nav-inner" style="max-width: 1160px; margin: 0 auto; padding: 0 32px; height: 60px; display: flex; align-items: center; justify-content: space-between;">
+      <!-- Logo text -->
+      <div style="line-height: 1.2;">
+        <div style="font-size: 13px; font-weight: 600; letter-spacing: 0.02em; color: #3D2314;">Agustina Casentini</div>
+        <div style="font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #9B8EC4; font-weight: 500;">Entrenadora Personal</div>
+      </div>
+      <!-- Links -->
+      <div class="nav-links" style="display: flex; align-items: center; gap: 32px;">
+        <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+        <a href="#servicios" class="nav-link">Servicios</a>
+        <a href="#galeria" class="nav-link">Galería</a>
+        <a href="#contacto" class="btn-coral" style="padding: 9px 22px; font-size: 13px;">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════ HERO ═══ -->
+  <section class="section-hero" style="min-height: calc(100vh - 60px); background: #FDF8F3; position: relative; overflow: hidden; display: flex; align-items: center;">
+
+    <!-- Decorative blobs -->
+    <div style="position: absolute; width: 520px; height: 520px; background: #F0C8AD; border-radius: 50%; top: -140px; right: -100px; opacity: 0.55; z-index: 0;"></div>
+    <div style="position: absolute; width: 240px; height: 240px; background: #EEE4F8; border-radius: 50%; bottom: 40px; left: -20px; opacity: 0.6; z-index: 0;"></div>
+    <div style="position: absolute; width: 130px; height: 130px; background: #F5D5C0; border-radius: 50%; top: 38%; right: 46%; opacity: 0.7; z-index: 0;"></div>
+
+    <div class="hero-inner" style="max-width: 1160px; margin: 0 auto; padding: 60px 32px; display: flex; align-items: center; gap: 64px; position: relative; z-index: 1; width: 100%;">
+
+      <!-- Left -->
+      <div class="hero-left" style="flex: 1; max-width: 500px;">
+        <!-- Label pill -->
+        <div style="display: inline-flex; align-items: center; gap: 7px; background: #FFF0EB; border: 1px solid #F5C4B4; border-radius: 999px; padding: 6px 14px; margin-bottom: 22px;">
+          <span style="width: 7px; height: 7px; background: #E8836E; border-radius: 50%; flex-shrink: 0;"></span>
+          <span style="font-size: 11px; font-weight: 600; color: #E8836E; letter-spacing: 0.1em; text-transform: uppercase;">Profesora de Educación Física</span>
+        </div>
+        <h1 style="font-size: clamp(54px, 5.8vw, 82px); font-weight: 700; line-height: 1.08; letter-spacing: -0.02em; color: #3D2314; margin-bottom: 20px;">
+          Entrenamiento<br>
+          con <span class="script" style="font-size: 1.1em; line-height: 1;">criterio</span><br>
+          y estructura
+        </h1>
+        <p style="color: #6B5748; font-size: 15px; line-height: 1.78; max-width: 400px; margin-bottom: 32px;">
+          Planes personalizados online y presenciales en Mar del Plata. Full Body, Funcional y Stretching con acompañamiento real — sin vueltas, con resultados.
+        </p>
+        <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 36px;">
+          <a href="https://wa.me/5492234000000" target="_blank" rel="noopener"
+             class="btn-coral"
+             style="display: inline-flex; align-items: center; gap: 9px;">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Escribime al WhatsApp
+          </a>
+          <a href="#servicios" class="arrow-link">Ver servicios <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg></a>
+        </div>
+        <!-- Service pills -->
+        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+          <span style="background: #FDF0EB; border: 1px solid #F5C4B4; color: #C06040; font-size: 12px; font-weight: 500; padding: 5px 13px; border-radius: 999px;">Presencial MDQ</span>
+          <span style="background: #EEE4F8; border: 1px solid #D8CAF0; color: #7058A0; font-size: 12px; font-weight: 500; padding: 5px 13px; border-radius: 999px;">Online en vivo</span>
+          <span style="background: #FFF0EB; border: 1px solid #F5C4B4; color: #C06040; font-size: 12px; font-weight: 500; padding: 5px 13px; border-radius: 999px;">Full Body</span>
+          <span style="background: #FFFAE0; border: 1px solid #EAD890; color: #8A6A10; font-size: 12px; font-weight: 500; padding: 5px 13px; border-radius: 999px;">Stretching</span>
+        </div>
+      </div>
+
+      <!-- Right: photo + floating cards -->
+      <div class="hero-right" style="flex: 1; display: flex; justify-content: center; align-items: center; position: relative; min-height: 480px;">
+        <!-- Soft circle behind photo -->
+        <div style="position: absolute; width: 380px; height: 380px; background: #F0C8AD; border-radius: 50%; opacity: 0.5; z-index: 0; left: 50%; transform: translateX(-66%);"></div>
+        <!-- Photo -->
+        <div class="hero-img-wrap">
+          <img src="./foto_agustina_hero.webp" alt="Agustina Casentini" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 12%;">
+        </div>
+        <!-- Stacked floating cards -->
+        <div class="hero-cards" style="display: flex; flex-direction: column; gap: 11px; margin-left: 20px; z-index: 3;">
+          <!-- Card 1 — 100% personalizado -->
+          <div class="float-card">
+            <div class="float-icon" style="background: #FFF0EB;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E8836E" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <div style="font-size: 12px; font-weight: 600; color: #3D2314; line-height: 1.3;">100% personalizado</div>
+              <div style="font-size: 11px; color: #9B8A7C; margin-top: 2px;">A tu ritmo</div>
+            </div>
+          </div>
+          <!-- Card 2 — MDQ -->
+          <div class="float-card">
+            <div class="float-icon" style="background: #FFE9E4;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E8836E" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div style="font-size: 12px; font-weight: 600; color: #3D2314; line-height: 1.3;">MDQ</div>
+              <div style="font-size: 11px; color: #9B8A7C; margin-top: 2px;">Barrio Chauvin</div>
+            </div>
+          </div>
+          <!-- Card 3 — Clases en vivo -->
+          <div class="float-card">
+            <div class="float-icon" style="background: #EEE4F8;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9B8EC4" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+            </div>
+            <div>
+              <div style="font-size: 12px; font-weight: 600; color: #3D2314; line-height: 1.3;">Clases en vivo</div>
+              <div style="font-size: 11px; color: #9B8A7C; margin-top: 2px;">1 hora de energía</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ STATS BAR ═══ -->
+  <div class="stats-bar" style="padding: 0 32px;">
+    <div class="stats-grid" style="max-width: 1160px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px;">
+      <!-- Stat 1 -->
+      <div style="display: flex; align-items: center; gap: 14px; padding: 22px 0;">
+        <div style="width: 42px; height: 42px; background: rgba(255,255,255,0.18); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div>
+          <div style="font-size: 22px; font-weight: 700; color: white; letter-spacing: -0.02em; line-height: 1;">+40</div>
+          <div style="font-size: 12px; color: rgba(255,255,255,0.75); margin-top: 3px;">Alumnos acompañados</div>
+        </div>
+      </div>
+      <!-- Stat 2 -->
+      <div style="display: flex; align-items: center; gap: 14px; padding: 22px 0;">
+        <div style="width: 42px; height: 42px; background: rgba(255,255,255,0.18); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        </div>
+        <div>
+          <div style="font-size: 22px; font-weight: 700; color: white; letter-spacing: -0.02em; line-height: 1;">100%</div>
+          <div style="font-size: 12px; color: rgba(255,255,255,0.75); margin-top: 3px;">Personalizado</div>
+        </div>
+      </div>
+      <!-- Stat 3 -->
+      <div style="display: flex; align-items: center; gap: 14px; padding: 22px 0;">
+        <div style="width: 42px; height: 42px; background: rgba(255,255,255,0.18); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <div>
+          <div style="font-size: 22px; font-weight: 700; color: white; letter-spacing: -0.02em; line-height: 1;">Online</div>
+          <div style="font-size: 12px; color: rgba(255,255,255,0.75); margin-top: 3px;">Planes digitales</div>
+        </div>
+      </div>
+      <!-- Stat 4 -->
+      <div style="display: flex; align-items: center; gap: 14px; padding: 22px 0;">
+        <div style="width: 42px; height: 42px; background: rgba(255,255,255,0.18); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div>
+          <div style="font-size: 22px; font-weight: 700; color: white; letter-spacing: -0.02em; line-height: 1;">MDQ</div>
+          <div style="font-size: 12px; color: rgba(255,255,255,0.75); margin-top: 3px;">Mar del Plata</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ ABOUT ═══ -->
+  <section id="sobre-mi" class="section-about" style="background: #FFFAF5; padding: 110px 32px;">
+    <div class="about-inner" style="max-width: 1160px; margin: 0 auto; display: flex; align-items: center; gap: 80px;">
+
+      <!-- Photo -->
+      <div class="about-photo" style="flex: 0 0 440px;">
+        <div style="border-radius: 24px; overflow: hidden; height: 500px; box-shadow: 0 16px 56px rgba(61,35,20,0.12);">
+          <img src="./brand_assets/hola_foto_agustina_casentini.svg" alt="Agustina Casentini" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div class="about-text" style="flex: 1;">
+        <div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #E8836E; font-weight: 600; margin-bottom: 14px;">Acerca de mí</div>
+        <h2 style="font-size: 46px; font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; color: #3D2314; margin-bottom: 22px;">
+          Hola, soy <span class="script" style="font-size: 1.12em;">Agustina</span>
+        </h2>
+        <p style="color: #6B5748; font-size: 15px; line-height: 1.78; margin-bottom: 16px;">
+          Soy profesora de Educación Física y entrenadora personal especializada en entrenamiento funcional. Me apasiona acompañar a cada persona en su proceso de transformación, respetando sus tiempos y potenciando sus capacidades.
+        </p>
+        <p style="color: #6B5748; font-size: 15px; line-height: 1.78; margin-bottom: 30px;">
+          Trabajo de forma online y presencial en Mar del Plata, diseñando programas 100% adaptados a tu cuerpo, rutina y objetivos reales.
+        </p>
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <div class="bullet-item">
+            <div class="bullet-dot">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#E8836E" stroke-width="3.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            Profesora de Educación Física egresada
+          </div>
+          <div class="bullet-item">
+            <div class="bullet-dot">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#E8836E" stroke-width="3.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            Entrenadora personal certificada
+          </div>
+          <div class="bullet-item">
+            <div class="bullet-dot">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#E8836E" stroke-width="3.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            Especialista en entrenamiento funcional
+          </div>
+          <div class="bullet-item">
+            <div class="bullet-dot">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#E8836E" stroke-width="3.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            Más de 5 años de experiencia
+          </div>
+          <div class="bullet-item">
+            <div class="bullet-dot">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#E8836E" stroke-width="3.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            Planes online disponibles para todo el país
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ SERVICES ═══ -->
+  <section id="servicios" class="section-services" style="background: #FDF8F3; padding: 110px 32px;">
+    <div style="max-width: 1160px; margin: 0 auto;">
+
+      <!-- Header row -->
+      <div class="services-header" style="display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 56px; gap: 40px;">
+        <div>
+          <div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #E8836E; font-weight: 600; margin-bottom: 14px;">Servicios</div>
+          <h2 style="font-size: 46px; font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; color: #3D2314;">
+            Servicios para <span class="script" style="font-size: 1.1em;">cada</span> <span class="script" style="font-size: 1.1em;">objetivo</span>
+          </h2>
+        </div>
+        <p style="max-width: 280px; color: #6B5748; font-size: 14px; line-height: 1.75; text-align: right; flex-shrink: 0;">
+          Cada plan está diseñado específicamente para vos, teniendo en cuenta tu cuerpo, tu ritmo y tus metas.
+        </p>
+      </div>
+
+      <!-- 3×2 grid -->
+      <div class="services-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+
+        <div class="service-card">
+          <img src="./brand_assets/Asset 6.svg" alt="" style="width: 48px; height: 48px; margin-bottom: 18px;">
+          <h3 style="font-size: 20px; font-weight: 700; color: #3D2314; margin-bottom: 10px;">Full Body</h3>
+          <p style="font-size: 13px; color: #6B5748; line-height: 1.7; margin-bottom: 18px;">
+            Rutinas completas para trabajar todo el cuerpo. Ideal para empezar o dar un salto en tu entrenamiento.
+          </p>
+          <a href="#contacto" class="arrow-link">Conocer <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg></a>
+        </div>
+
+        <div class="service-card">
+          <img src="./brand_assets/Asset 5.svg" alt="" style="width: 48px; height: 48px; margin-bottom: 18px;">
+          <h3 style="font-size: 20px; font-weight: 700; color: #3D2314; margin-bottom: 10px;">Face-head</h3>
+          <p style="font-size: 13px; color: #6B5748; line-height: 1.7; margin-bottom: 18px;">
+            Entrenamiento específico para zona facial y cervical. Tonificación y bienestar desde la cabeza.
+          </p>
+          <a href="#contacto" class="arrow-link">Conocer <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg></a>
+        </div>
+
+        <div class="service-card">
+          <img src="./brand_assets/Asset 4.svg" alt="" style="width: 48px; height: 48px; margin-bottom: 18px;">
+          <h3 style="font-size: 20px; font-weight: 700; color: #3D2314; margin-bottom: 10px;">Stretching</h3>
+          <p style="font-size: 13px; color: #6B5748; line-height: 1.7; margin-bottom: 18px;">
+            Sesiones de elongación y flexibilidad para mejorar la movilidad, reducir tensión y prevenir lesiones.
+          </p>
+          <a href="#contacto" class="arrow-link">Conocer <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg></a>
+        </div>
+
+        <div class="service-card">
+          <img src="./brand_assets/Asset 7.svg" alt="" style="width: 48px; height: 48px; margin-bottom: 18px;">
+          <h3 style="font-size: 20px; font-weight: 700; color: #3D2314; margin-bottom: 10px;">Plan Online</h3>
+          <p style="font-size: 13px; color: #6B5748; line-height: 1.7; margin-bottom: 18px;">
+            Plan de entrenamiento digital diseñado para vos. Seguimiento semanal y ajustes según tu evolución.
+          </p>
+          <a href="#contacto" class="arrow-link">Conocer <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg></a>
+        </div>
+
+        <div class="service-card">
+          <img src="./brand_assets/Asset 8.svg" alt="" style="width: 48px; height: 48px; margin-bottom: 18px;">
+          <h3 style="font-size: 20px; font-weight: 700; color: #3D2314; margin-bottom: 10px;">Descuento MDQ</h3>
+          <p style="font-size: 13px; color: #6B5748; line-height: 1.7; margin-bottom: 18px;">
+            Precio especial para quienes viven en Mar del Plata. Entrenamiento presencial con tarifa diferencial.
+          </p>
+          <a href="#contacto" class="arrow-link">Conocer <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg></a>
+        </div>
+
+        <div class="service-card">
+          <img src="./brand_assets/Asset 9.svg" alt="" style="width: 48px; height: 48px; margin-bottom: 18px;">
+          <h3 style="font-size: 20px; font-weight: 700; color: #3D2314; margin-bottom: 10px;">Plan Personalizado</h3>
+          <p style="font-size: 13px; color: #6B5748; line-height: 1.7; margin-bottom: 18px;">
+            El programa más completo. Evaluación inicial, planificación detallada y seguimiento mensual continuo.
+          </p>
+          <a href="#contacto" class="arrow-link">Conocer <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ GALLERY ═══ -->
+  <section id="galeria" class="section-gallery" style="background: #FFFAF5; padding: 110px 0;">
+    <!-- Header -->
+    <div style="max-width: 1160px; margin: 0 auto; padding: 0 32px 40px;">
+      <div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #E8836E; font-weight: 600; margin-bottom: 14px;">Galería</div>
+      <h2 style="font-size: 46px; font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; color: #3D2314;">
+        Así <span class="script" style="font-size: 1.1em;">entrenamos</span>
+      </h2>
+    </div>
+
+    <!-- Slider row: arrow + viewport + arrow -->
+    <div style="max-width: 1260px; margin: 0 auto; padding: 0 32px; display: flex; align-items: center; gap: 18px;">
+      <button class="gallery-arrow" id="galleryPrev" aria-label="Anterior">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3D2314" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </button>
+
+      <div class="gallery-viewport" style="flex: 1;">
+        <div class="gallery-track" id="galleryTrack">
+          <div class="gallery-slide"><img src="./brand_assets/agustinacasentini03.webp" alt="Entrenamiento" loading="lazy"></div>
+          <div class="gallery-slide"><img src="./brand_assets/agustinacasentini04.webp" alt="Entrenamiento" loading="lazy"></div>
+          <div class="gallery-slide"><img src="./brand_assets/agustinacasentini05.webp" alt="Entrenamiento" loading="lazy"></div>
+          <div class="gallery-slide"><img src="./brand_assets/agustinacasentini06.webp" alt="Entrenamiento" loading="lazy"></div>
+          <div class="gallery-slide"><img src="./brand_assets/agustinacasentini07.webp" alt="Entrenamiento" loading="lazy"></div>
+          <div class="gallery-slide"><img src="./brand_assets/agustinacasentini08.webp" alt="Entrenamiento" loading="lazy"></div>
+          <div class="gallery-slide"><img src="./brand_assets/agustinacasentini09.webp" alt="Entrenamiento" loading="lazy"></div>
+          <div class="gallery-slide"><img src="./brand_assets/agustinacasentini10.webp" alt="Entrenamiento" loading="lazy"></div>
+          <div class="gallery-slide"><img src="./brand_assets/agustinacasentini011.webp" alt="Entrenamiento" loading="lazy"></div>
+          <div class="gallery-slide"><img src="./brand_assets/agustinacasentini012.webp" alt="Entrenamiento" loading="lazy"></div>
+          <div class="gallery-slide"><img src="./brand_assets/agustinacasentini013.webp" alt="Entrenamiento" loading="lazy"></div>
+          <div class="gallery-slide"><img src="./brand_assets/agustinacasentini014.webp" alt="Entrenamiento" loading="lazy"></div>
+          <div class="gallery-slide"><img src="./brand_assets/agustinacasentini015.webp" alt="Entrenamiento" loading="lazy"></div>
+        </div>
+      </div>
+
+      <button class="gallery-arrow" id="galleryNext" aria-label="Siguiente">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3D2314" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </button>
+    </div>
+
+    <!-- Dots -->
+    <div id="galleryDots" style="display: flex; justify-content: center; gap: 8px; align-items: center; margin-top: 28px;"></div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ TESTIMONIALS ═══ -->
+  <section class="section-testimonials" style="background: #FDF8F3; padding: 110px 32px;">
+    <div style="max-width: 1160px; margin: 0 auto;">
+
+      <div style="text-align: center; margin-bottom: 60px;">
+        <div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #E8836E; font-weight: 600; margin-bottom: 14px;">Testimonios</div>
+        <h2 style="font-size: 46px; font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; color: #3D2314;">
+          Resultados <span class="script" style="font-size: 1.1em;">reales</span>
+        </h2>
+      </div>
+
+      <div class="testimonials-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;">
+
+        <div class="testimonial-card">
+          <div style="color: #E8836E; font-size: 17px; letter-spacing: 2px; margin-bottom: 18px;">★★★★★</div>
+          <p style="font-size: 14px; color: #6B5748; line-height: 1.78; margin-bottom: 22px;">
+            "Agustina me cambió la vida. En tres meses logré resultados que no había conseguido en años. Su plan es súper personalizado y siempre está disponible para consultas."
+          </p>
+          <div>
+            <div style="font-size: 14px; font-weight: 600; color: #3D2314;">Florencia M.</div>
+            <div style="font-size: 12px; color: #9B8A7C; margin-top: 1px;">Mar del Plata</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div style="color: #E8836E; font-size: 17px; letter-spacing: 2px; margin-bottom: 18px;">★★★★★</div>
+          <p style="font-size: 14px; color: #6B5748; line-height: 1.78; margin-bottom: 22px;">
+            "La mejor decisión fue empezar con Agustina. Me enseñó a entrenar con criterio y entender mi cuerpo. La metodología online funciona perfecto."
+          </p>
+          <div>
+            <div style="font-size: 14px; font-weight: 600; color: #3D2314;">Valentina R.</div>
+            <div style="font-size: 12px; color: #9B8A7C; margin-top: 1px;">Buenos Aires</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div style="color: #E8836E; font-size: 17px; letter-spacing: 2px; margin-bottom: 18px;">★★★★★</div>
+          <p style="font-size: 14px; color: #6B5748; line-height: 1.78; margin-bottom: 22px;">
+            "Es increíble cómo Agustina adapta todo al tiempo y posibilidades de cada una. Nunca me sentí presionada y siempre con ganas de seguir entrenando."
+          </p>
+          <div>
+            <div style="font-size: 14px; font-weight: 600; color: #3D2314;">Luciana P.</div>
+            <div style="font-size: 12px; color: #9B8A7C; margin-top: 1px;">Mar del Plata</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ CTA + CONTACT ═══ -->
+  <section id="contacto" class="section-contact" style="background: #FFFAF5; padding: 110px 32px;">
+    <div class="contact-inner" style="max-width: 1160px; margin: 0 auto; display: flex; align-items: flex-start; gap: 80px;">
+
+      <!-- Left -->
+      <div style="flex: 1;">
+        <div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #E8836E; font-weight: 600; margin-bottom: 14px;">Contacto</div>
+        <h2 style="font-size: 46px; font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; color: #3D2314; margin-bottom: 18px;">
+          ¡Empezá a <span class="script">cambiar</span> hoy!
+        </h2>
+        <p style="color: #6B5748; font-size: 15px; line-height: 1.78; margin-bottom: 40px;">
+          Escribime y te cuento cómo podemos trabajar juntas. La primera consulta es sin cargo.
+        </p>
+
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+          <a href="https://wa.me/5492234000000" target="_blank" rel="noopener" class="contact-card">
+            <div style="width: 46px; height: 46px; background: #E8F5E9; border-radius: 12px; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </div>
+            <div style="flex:1;">
+              <div style="font-size: 14px; font-weight: 600; color: #3D2314;">WhatsApp</div>
+              <div style="font-size: 12px; color: #9B8A7C; margin-top: 2px;">Escribime directamente</div>
+            </div>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E8836E" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+
+          <a href="https://www.instagram.com/professora.agustina/" target="_blank" rel="noopener" class="contact-card">
+            <div style="width: 46px; height: 46px; background: #FDE2F3; border-radius: 12px; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E1306C" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </div>
+            <div style="flex:1;">
+              <div style="font-size: 14px; font-weight: 600; color: #3D2314;">Instagram</div>
+              <div style="font-size: 12px; color: #9B8A7C; margin-top: 2px;">@professora.agustina</div>
+            </div>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E8836E" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+
+          <a href="#servicios" class="contact-card">
+            <div style="width: 46px; height: 46px; background: #EEE4F8; border-radius: 12px; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8570a0" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div style="flex:1;">
+              <div style="font-size: 14px; font-weight: 600; color: #3D2314;">Descuento MDQ</div>
+              <div style="font-size: 12px; color: #9B8A7C; margin-top: 2px;">Precio especial en Mar del Plata</div>
+            </div>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E8836E" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div style="flex: 1;">
+        <div style="background: white; border: 1px solid #EDE5D8; border-radius: 24px; padding: 44px; box-shadow: 0 6px 32px rgba(61,35,20,0.07);">
+          <h3 style="font-size: 22px; font-weight: 600; color: #3D2314; margin-bottom: 6px;">Mandame tu consulta</h3>
+          <p style="font-size: 13px; color: #9B8A7C; margin-bottom: 30px; line-height: 1.6;">Te respondo dentro de las 24 horas hábiles.</p>
+
+          <form id="contactForm" style="display:flex; flex-direction:column; gap:16px;" onsubmit="handleFormSubmit(event)">
+            <!-- Web3Forms config -->
+            <input type="hidden" name="access_key" value="6f1406ab-35c0-49eb-991e-295291e18077">
+            <input type="hidden" name="subject" value="Nueva consulta desde agustinacasentini.com">
+            <input type="hidden" name="from_name" value="Sitio Agustina Casentini">
+            <input type="hidden" name="botcheck" value="" style="display:none;">
+
+            <div>
+              <label style="display:block; font-size:12px; font-weight:600; color:#3D2314; margin-bottom:6px; letter-spacing:0.03em;">Nombre</label>
+              <input class="form-input" type="text" name="name" placeholder="Tu nombre completo" required>
+            </div>
+            <div>
+              <label style="display:block; font-size:12px; font-weight:600; color:#3D2314; margin-bottom:6px; letter-spacing:0.03em;">Email</label>
+              <input class="form-input" type="email" name="email" placeholder="tu@email.com" required>
+            </div>
+            <div>
+              <label style="display:block; font-size:12px; font-weight:600; color:#3D2314; margin-bottom:6px; letter-spacing:0.03em;">Tipo de consulta</label>
+              <select class="form-input" name="tipo_consulta" style="appearance:none; cursor:pointer;">
+                <option value="" disabled selected>Seleccioná una opción</option>
+                <option>Full Body</option>
+                <option>Face-head</option>
+                <option>Stretching</option>
+                <option>Plan Online</option>
+                <option>Descuento MDQ</option>
+                <option>Plan Personalizado</option>
+              </select>
+            </div>
+            <div>
+              <label style="display:block; font-size:12px; font-weight:600; color:#3D2314; margin-bottom:6px; letter-spacing:0.03em;">Mensaje</label>
+              <textarea class="form-input" name="message" placeholder="Contame sobre tus objetivos..." rows="4" style="resize:vertical;"></textarea>
+            </div>
+            <button type="submit" id="submitBtn" class="btn-coral" style="width:100%; text-align:center;">
+              Enviar consulta
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ FOOTER ═══ -->
+  <footer class="section-footer" style="background: #3D2314; padding: 44px 32px;">
+    <div class="footer-inner" style="max-width: 1160px; margin: 0 auto; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;">
+      <div>
+        <div style="font-size: 15px; font-weight: 600; color: white; margin-bottom: 4px;">Agustina Casentini</div>
+        <div style="font-size: 12px; color: rgba(255,255,255,0.45);">Entrenadora Personal · Mar del Plata</div>
+      </div>
+      <div style="display: flex; gap: 28px;">
+        <a href="#sobre-mi" style="font-size:13px; color:rgba(255,255,255,0.55); text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='rgba(255,255,255,0.9)'" onmouseout="this.style.color='rgba(255,255,255,0.55)'">Sobre mí</a>
+        <a href="#servicios" style="font-size:13px; color:rgba(255,255,255,0.55); text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='rgba(255,255,255,0.9)'" onmouseout="this.style.color='rgba(255,255,255,0.55)'">Servicios</a>
+        <a href="#contacto" style="font-size:13px; color:rgba(255,255,255,0.55); text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='rgba(255,255,255,0.9)'" onmouseout="this.style.color='rgba(255,255,255,0.55)'">Contacto</a>
+      </div>
+      <div style="font-size: 12px; color: rgba(255,255,255,0.3);">© 2025 Agustina Casentini</div>
+    </div>
+  </footer>
+
+  <!-- Lightbox overlay -->
+  <div id="lightbox" role="dialog" aria-modal="true">
+    <button id="lightboxClose" aria-label="Cerrar">&#x2715;</button>
+    <button class="lb-arrow" id="lbPrev" aria-label="Anterior">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    </button>
+    <img id="lightboxImg" src="" alt="Foto ampliada">
+    <button class="lb-arrow" id="lbNext" aria-label="Siguiente">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    </button>
+  </div>
+
+  <script defer>
+    // ── Gallery slider ──────────────────────────────────────
+    (function() {
+      const track   = document.getElementById('galleryTrack');
+      const dotsEl  = document.getElementById('galleryDots');
+      const prevBtn = document.getElementById('galleryPrev');
+      const nextBtn = document.getElementById('galleryNext');
+      const slides  = Array.from(track.querySelectorAll('.gallery-slide'));
+      const total   = slides.length;
+      let current   = 0;
+      let VISIBLE   = getVisible();
+      let pages     = total - VISIBLE + 1;
+
+      function getVisible() {
+        return window.innerWidth < 640 ? 1 : window.innerWidth < 1024 ? 2 : 4;
+      }
+
+      function buildDots() {
+        dotsEl.innerHTML = '';
+        for (let i = 0; i < pages; i++) {
+          const d = document.createElement('div');
+          d.className = 'gallery-dot' + (i === 0 ? ' active' : '');
+          d.addEventListener('click', () => goTo(i));
+          dotsEl.appendChild(d);
+        }
+      }
+
+      function goTo(idx) {
+        current = Math.max(0, Math.min(idx, pages - 1));
+        const vp     = track.parentElement.offsetWidth;
+        const gap    = 16;
+        const slideW = (vp - gap * (VISIBLE - 1)) / VISIBLE;
+        const offset = current * (slideW + gap);
+        track.style.transform = `translateX(-${offset}px)`;
+        dotsEl.querySelectorAll('.gallery-dot').forEach((d, i) => {
+          d.classList.toggle('active', i === current);
+        });
+        prevBtn.style.opacity = current === 0 ? '0.35' : '1';
+        nextBtn.style.opacity = current === pages - 1 ? '0.35' : '1';
+      }
+
+      prevBtn.addEventListener('click', () => goTo(current - 1));
+      nextBtn.addEventListener('click', () => goTo(current + 1));
+      buildDots();
+      goTo(0);
+
+      // Recalc on resize
+      window.addEventListener('resize', () => {
+        const newVisible = getVisible();
+        if (newVisible !== VISIBLE) {
+          VISIBLE = newVisible;
+          pages   = total - VISIBLE + 1;
+          buildDots();
+        }
+        goTo(Math.min(current, pages - 1));
+      });
+    })();
+
+    async function handleFormSubmit(e) {
+      e.preventDefault();
+      const form = e.target;
+      const btn  = document.getElementById('submitBtn');
+
+      btn.textContent = 'Enviando…';
+      btn.disabled = true;
+      btn.style.opacity = '0.7';
+
+      try {
+        const res  = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify(Object.fromEntries(new FormData(form))),
+        });
+        const data = await res.json();
+
+        if (data.success) {
+          btn.textContent = '¡Enviado! Te respondo pronto ✓';
+          btn.style.background = '#6BAA8C';
+          btn.style.opacity = '1';
+          form.reset();
+          setTimeout(() => {
+            btn.textContent = 'Enviar consulta';
+            btn.style.background = '#E8836E';
+            btn.disabled = false;
+          }, 4000);
+        } else {
+          throw new Error(data.message || 'Error al enviar');
+        }
+      } catch (err) {
+        btn.textContent = 'Error al enviar. Intentá de nuevo.';
+        btn.style.background = '#C97090';
+        btn.style.opacity = '1';
+        btn.disabled = false;
+        setTimeout(() => {
+          btn.textContent = 'Enviar consulta';
+          btn.style.background = '#E8836E';
+        }, 4000);
+      }
+    }
+
+
+    // ── Lightbox ─────────────────────────────────────────────
+    (function() {
+      const lb      = document.getElementById('lightbox');
+      const lbImg   = document.getElementById('lightboxImg');
+      const lbClose = document.getElementById('lightboxClose');
+      const lbPrev  = document.getElementById('lbPrev');
+      const lbNext  = document.getElementById('lbNext');
+      const imgs    = Array.from(document.querySelectorAll('.gallery-slide img'));
+      let current   = 0;
+
+      function show(index) {
+        current = (index + imgs.length) % imgs.length;
+        lbImg.src = imgs[current].src;
+        lb.classList.add('open');
+      }
+
+      imgs.forEach((img, i) => img.addEventListener('click', () => show(i)));
+
+      function close() { lb.classList.remove('open'); lbImg.src = ''; }
+      lbClose.addEventListener('click', close);
+      lbPrev.addEventListener('click', e => { e.stopPropagation(); show(current - 1); });
+      lbNext.addEventListener('click', e => { e.stopPropagation(); show(current + 1); });
+      lb.addEventListener('click', e => { if (e.target === lb) close(); });
+      document.addEventListener('keydown', e => {
+        if (!lb.classList.contains('open')) return;
+        if (e.key === 'Escape')      close();
+        if (e.key === 'ArrowLeft')   show(current - 1);
+        if (e.key === 'ArrowRight')  show(current + 1);
+      });
+    })();
+  </script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js');
+      });
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "Agustina Casentini",
+  "short_name": "AC Trainer",
+  "description": "Entrenadora personal en Mar del Plata",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#E8836E",
+  "background_color": "#FDF8F3"
+}
