@@ -44,9 +44,9 @@
   <section class="section-hero" style="min-height: calc(100vh - 60px); background: #FDF8F3; position: relative; overflow: hidden; display: flex; align-items: center;">
 
     <!-- Decorative blobs -->
-    <div style="position: absolute; width: 520px; height: 520px; background: #F0C8AD; border-radius: 50%; top: -140px; right: -100px; opacity: 0.55; z-index: 0;"></div>
-    <div style="position: absolute; width: 240px; height: 240px; background: #EEE4F8; border-radius: 50%; bottom: 40px; left: -20px; opacity: 0.6; z-index: 0;"></div>
-    <div style="position: absolute; width: 130px; height: 130px; background: #F5D5C0; border-radius: 50%; top: 38%; right: 46%; opacity: 0.7; z-index: 0;"></div>
+    <div style="position: absolute; width: 520px; height: 520px; background: #E8836E; border-radius: 50%; top: -140px; right: -100px; opacity: 0.65; z-index: 0; filter: blur(64px);"></div>
+    <div style="position: absolute; width: 240px; height: 240px; background: #9B74C8; border-radius: 50%; bottom: 40px; left: -20px; opacity: 0.65; z-index: 0; filter: blur(52px);"></div>
+    <div style="position: absolute; width: 130px; height: 130px; background: #D9906A; border-radius: 50%; top: 38%; right: 46%; opacity: 0.75; z-index: 0; filter: blur(28px);"></div>
 
     <div class="hero-inner" style="max-width: 1160px; margin: 0 auto; padding: 60px 32px; display: flex; align-items: center; gap: 64px; position: relative; z-index: 1; width: 100%;">
 
@@ -57,7 +57,7 @@
           <span style="width: 7px; height: 7px; background: #E8836E; border-radius: 50%; flex-shrink: 0;"></span>
           <span style="font-size: 11px; font-weight: 600; color: #E8836E; letter-spacing: 0.1em; text-transform: uppercase;">Profesora de Educación Física</span>
         </div>
-        <h1 style="font-size: clamp(54px, 5.8vw, 82px); font-weight: 700; line-height: 1.08; letter-spacing: -0.02em; color: #3D2314; margin-bottom: 20px;">
+        <h1 style="font-size: clamp(54px, 5.8vw, 82px); font-weight: 700; line-height: 0.81; letter-spacing: -0.02em; color: #3D2314; margin-bottom: 20px;">
           Entrenamiento<br>
           con <span class="script" style="font-size: 1.1em; line-height: 1;">criterio</span><br>
           y estructura
@@ -85,11 +85,18 @@
 
       <!-- Right: photo + floating cards -->
       <div class="hero-right" style="flex: 1; display: flex; justify-content: center; align-items: center; position: relative; min-height: 480px;">
-        <!-- Soft circle behind photo -->
-        <div style="position: absolute; width: 380px; height: 380px; background: #F0C8AD; border-radius: 50%; opacity: 0.5; z-index: 0; left: 50%; transform: translateX(-66%);"></div>
-        <!-- Photo -->
-        <div class="hero-img-wrap">
-          <img src="./foto_agustina_hero.webp" alt="Agustina Casentini" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 12%;">
+        <!-- Soft circle behind photo (blurred + darker) -->
+        <div style="position: absolute; width: 420px; height: 420px; background: #E8836E; border-radius: 50%; opacity: 0.45; z-index: 0; left: 50%; transform: translateX(-66%); filter: blur(56px);"></div>
+        <!-- Photo + play button -->
+        <div style="position: relative; z-index: 2; flex-shrink: 0;">
+          <div class="hero-img-wrap">
+            <img src="./foto_agustina_hero.webp" alt="Agustina Casentini" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 12%;">
+          </div>
+          <!-- Play button encima del borde izquierdo del círculo -->
+          <a href="#contacto" aria-label="Ir a contacto"
+             style="position: absolute; left: -38px; top: 50%; transform: translateY(-50%); width: 76px; height: 76px; background: #E8836E; border: 3px solid white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 28px rgba(232,131,110,0.40); text-decoration: none; z-index: 5;">
+            <svg width="24" height="24" viewbox="0 0 24 24" fill="white"><polygon points="7 4 21 12 7 20 7 4"/></svg>
+          </a>
         </div>
         <!-- Stacked floating cards -->
         <div class="hero-cards" style="display: flex; flex-direction: column; gap: 11px; margin-left: 20px; z-index: 3;">
@@ -128,51 +135,57 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════ STATS BAR ═══ -->
-  <div class="stats-bar" style="padding: 0 32px;">
-    <div class="stats-grid" style="max-width: 1160px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px;">
-      <!-- Stat 1 -->
-      <div style="display: flex; align-items: center; gap: 14px; padding: 22px 0;">
-        <div style="width: 42px; height: 42px; background: rgba(255,255,255,0.18); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+  <!-- ═══════════════════════════════════════ MOTIVACION + STATS ═══ -->
+  <section style="background: #FFFFFF; padding: 80px 32px 72px;">
+    <div style="max-width: 1160px; margin: 0 auto;">
+
+      <!-- Fila superior: Foto + Frase -->
+      <div class="motiv-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: stretch; margin-bottom: 64px;">
+        <!-- Foto -->
+        <div style="border-radius: 20px; overflow: hidden; min-height: 420px; box-shadow: 0 12px 40px rgba(61,35,20,0.10);">
+          <img src="./brand_assets/agustinacasentini015.webp" alt="Entrenamiento Agustina Casentini" style="width: 100%; height: 100%; object-fit: cover; object-position: center center; display: block; transform: scale(1.2); transform-origin: center center;">
         </div>
-        <div>
-          <div style="font-size: 22px; font-weight: 700; color: white; letter-spacing: -0.02em; line-height: 1;">+40</div>
-          <div style="font-size: 12px; color: rgba(255,255,255,0.75); margin-top: 3px;">Alumnos acompañados</div>
-        </div>
-      </div>
-      <!-- Stat 2 -->
-      <div style="display: flex; align-items: center; gap: 14px; padding: 22px 0;">
-        <div style="width: 42px; height: 42px; background: rgba(255,255,255,0.18); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-        </div>
-        <div>
-          <div style="font-size: 22px; font-weight: 700; color: white; letter-spacing: -0.02em; line-height: 1;">100%</div>
-          <div style="font-size: 12px; color: rgba(255,255,255,0.75); margin-top: 3px;">Personalizado</div>
+        <!-- Frase motivacional -->
+        <div style="display: flex; flex-direction: column; justify-content: center;">
+          <div style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #E8836E; font-weight: 600; margin-bottom: 20px;">Filosofía de entrenamiento</div>
+          <p class="script" style="font-size: 52px; line-height: 1.18; color: #3D2314; font-weight: 700; letter-spacing: -0.03em; margin: 0;">
+            "Tu cuerpo cambia cuando tu mente decide."
+          </p>
+          <p style="font-size: 15px; color: #9B8A7C; line-height: 1.7; margin-top: 24px; font-weight: 400;">
+            Cada sesión es una decisión. Acompañarte en ese camino, con dedicación real y resultados concretos, es lo que me mueve.
+          </p>
         </div>
       </div>
-      <!-- Stat 3 -->
-      <div style="display: flex; align-items: center; gap: 14px; padding: 22px 0;">
-        <div style="width: 42px; height: 42px; background: rgba(255,255,255,0.18); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-        </div>
+
+      <!-- Divisor -->
+      <div style="border-top: 1px solid #F0E8E0; margin-bottom: 52px;"></div>
+
+      <!-- Stats limpios -->
+      <div class="stats-clean-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;">
+        <!-- Stat 1 -->
         <div>
-          <div style="font-size: 22px; font-weight: 700; color: white; letter-spacing: -0.02em; line-height: 1;">Online</div>
-          <div style="font-size: 12px; color: rgba(255,255,255,0.75); margin-top: 3px;">Planes digitales</div>
+          <div style="font-size: 27px; font-weight: 700; color: #3D2314; letter-spacing: -0.03em; line-height: 1;">+40</div>
+          <div style="font-size: 14px; color: #9B8A7C; margin-top: 8px; line-height: 1.5;">Alumnos acompañados</div>
+        </div>
+        <!-- Stat 2 -->
+        <div>
+          <div style="font-size: 27px; font-weight: 700; color: #E8836E; letter-spacing: -0.03em; line-height: 1;">100%</div>
+          <div style="font-size: 14px; color: #9B8A7C; margin-top: 8px; line-height: 1.5;">Personalizado para vos</div>
+        </div>
+        <!-- Stat 3 -->
+        <div>
+          <div style="font-size: 27px; font-weight: 700; color: #9B8EC4; letter-spacing: -0.03em; line-height: 1;">Online</div>
+          <div style="font-size: 14px; color: #9B8A7C; margin-top: 8px; line-height: 1.5;">Desde cualquier lugar</div>
+        </div>
+        <!-- Stat 4 -->
+        <div>
+          <div style="font-size: 27px; font-weight: 700; color: #2D7A64; letter-spacing: -0.03em; line-height: 1;">MDQ</div>
+          <div style="font-size: 14px; color: #9B8A7C; margin-top: 8px; line-height: 1.5;">Presencial en Mar del Plata</div>
         </div>
       </div>
-      <!-- Stat 4 -->
-      <div style="display: flex; align-items: center; gap: 14px; padding: 22px 0;">
-        <div style="width: 42px; height: 42px; background: rgba(255,255,255,0.18); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        </div>
-        <div>
-          <div style="font-size: 22px; font-weight: 700; color: white; letter-spacing: -0.02em; line-height: 1;">MDQ</div>
-          <div style="font-size: 12px; color: rgba(255,255,255,0.75); margin-top: 3px;">Mar del Plata</div>
-        </div>
-      </div>
+
     </div>
-  </div>
+  </section>
 
   <!-- ═══════════════════════════════════════ ABOUT ═══ -->
   <section id="sobre-mi" class="section-about" style="background: #FFFAF5; padding: 110px 32px;">
