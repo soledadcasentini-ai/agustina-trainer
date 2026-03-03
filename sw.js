@@ -1,4 +1,4 @@
-const CACHE = 'ac-trainer-v2';
+const CACHE = 'ac-trainer-v3';
 const BASE = self.location.pathname.replace(/\/sw\.js$/, '');
 const ASSETS = [
   BASE + '/',
